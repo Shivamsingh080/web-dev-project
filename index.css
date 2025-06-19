@@ -1,0 +1,294 @@
+.top{
+    background-image: url(bg\,jpg.jpg);
+    width: 110%;
+    height: 1000px;
+    background-repeat:no-repeat;
+    
+
+     
+    
+}
+.top .logo{
+    position: absolute;
+    left: 37%;
+    top: 0%;
+    height: 55px;
+    width: 90px;
+    
+}
+.top .shadow{
+    position: absolute;
+    top: 84%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 1000px;
+    background-color: black;
+    border-radius: 50%;
+    filter: blur(40px);
+       
+}
+.text{ position: absolute;
+    font-weight: bold ;
+    font-size: 18px;
+    top: 65%;
+    left: 30%;
+    color: #fff;
+    z-index: 1;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 900;
+    font-size: 300%;
+    word-spacing: 10px;
+}
+.upcoming{
+    position: absolute;
+    top: 90%;
+    left: 26%;
+    font-weight: 700px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+    color: rgb(180, 180, 203);    text-align: center;
+}
+.buttonlocation1{height: 4%;
+    width: 10%;
+    position: absolute;
+    top: 110%;
+    left: 30%;
+    z-index: 1;
+
+} 
+ .buttonlocation1 button{
+    box-shadow: 0 0 10px rgb(84, 28, 152),
+    0 0 25px rgb(84, 28, 152);
+    background-color: rgb(84, 28, 152);
+    padding: 10px ;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600px;
+    transition: all 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.buttonhelp{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 24px;
+    padding : 14px 20px 14px 20px;
+    position: fixed;
+    top: 80%;
+    left:89%;
+    z-index: 2;
+    background-color: #4945a5;
+    color: #fff;
+
+
+}
+
+
+
+
+.buttonlocation1 button:hover{
+    box-shadow: 0 0 5px rgb(84, 28, 152),
+    0 0 5px rgb(84, 28, 152), 0 0 50px rgb(84, 28, 152),
+    0 0 1px rgb(84, 28, 152), 0 0 200px rgb(84, 28, 152);
+    color: #050409;
+    background-color: #fff;
+}
+.buttonlocation2{height: 4%;
+    width: 10%;
+    position: absolute;
+    top: 110%;
+    left: 57%;
+    z-index: 1;
+}
+.buttonlocation2 button{
+    box-shadow: 0 0 10px rgb(255, 255, 255),
+    0 0 25px rgb(254, 255, 255);
+    background-color: rgb(249, 243, 243);
+    padding: 10px ;
+    width: 120%;
+    border-radius: 10px;
+    font-weight: 600px;
+    transition: all 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+
+.buttonlocation2 button:hover{
+    box-shadow: 0 0 5px rgb(252, 253, 253),
+    0 0 2px rgb(254, 255, 255), 0 0 50px rgb(254, 254, 254),
+    0 0 1px rgb(241, 244, 244), 0 0 200px rgb(255, 255, 255);
+    color: black;
+    background-color: rgb(84, 28, 152 );
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(31,21, 60);
+}
+.banner .shadow{
+    position: absolute;
+    top: 8%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 1550px;
+    background-color: #050409;
+    border-radius: 50%;
+    filter: blur(20px);
+       
+}
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 25%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform:perspective(1000px);
+    animation: autorun 20s linear infinite;
+}
+@keyframes autorun{
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px)  rotateX(-10deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0 ;
+    transform:
+        rotateY(calc( (var(--position) - 1) *(360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.banner .content{
+    position: absolute;
+    top: 95%;
+    left: 65%;
+    transform: translatex(-50%);
+    width: min(1400px,100vh);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #40546d;
+    font-family: 'Franklin Gothic Medium';
+
+}
+
+.benefits{
+    background-color: rgb(31, 21, 60);
+    height: 1440px;
+    width: auto;
+    position: relative;
+}
+.benefits .page3top{
+    
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.benefits .line1{
+    position: absolute;
+    top: 5%;
+    left:43%;
+    color: bisque;
+}
+.benefits .line2{
+    color: #fff;
+    position: absolute;
+    top: 7%;
+    left: 33%;
+}
+.benefits .line3{
+    color: #554c6b;
+    position: absolute;
+    top: 12%;
+    left: 27%;
+    font-family: 'Franklin Gothic Medium', ;
+    animation:alternate-reverse;
+
+}
+.benefits .header3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.benefits .content{
+    color: #453f4f;
+}
+.benefits .point1{
+    position: absolute;
+    height: 50px;
+    left: 25%;
+    top: 25%;
+}
+.benefits .point2{
+    position: absolute;
+    left: 60%;
+    top: 41%;
+}
+.benefits .point3{
+    position: absolute;
+    left: 25%;
+    top: 59%;
+}
+.benefits .point4{
+    position: absolute;
+    left: 60% ;
+    top: 75%;
+}
+.benefits .point5{
+    position: absolute;
+    left: 25%;
+    top: 93%;
+    
+}
+.page4{
+    background-color:rgb(31, 21, 60) ;
+    height: 1440px;
+    width: auto;
+    position: relative;
+    
+}
+.page4 .header4{
+    color: #fff;
+    position: absolute;
+    left: 39%;
+    top: 15%;
+    
+}
+.page4 .content{
+    color: #453f4f;
+    position: absolute;
+    left: 32%;
+    top: 20%;
+
+}
+.page4 .portfolio{
+    background-color: rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 11px;
+    padding : 15px 25px 15px 25px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #000000;
+
+}
